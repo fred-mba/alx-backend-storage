@@ -18,7 +18,7 @@ class Cache:
         self._redis = redis.Redis()
         self._redis.flushdb(True)
 
-    def store(self, data: Union[str, int, float]) -> str:
+    def store(self, data: Union[str, bytes, int, float]) -> str:
         """
         Store a value in a Redis data storage and returns the key.
         """
