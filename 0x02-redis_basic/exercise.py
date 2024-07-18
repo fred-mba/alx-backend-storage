@@ -9,7 +9,7 @@ from typing import Union
 
 class Cache:
     """
-    A class to generate and store uuid keys
+    Return the generate uuid key
     """
     def __init__(self):
         self._redis = redis.Redis()
